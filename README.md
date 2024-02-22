@@ -1,16 +1,16 @@
-Pull the repository
+## Pull the repository
 
 **git clone**
 
-Set nodejs version
+## Set nodejs version
 
 **nvm use**
 
-Install project dependencies
+## Install project dependencies
 
 **npm i**
 
-Run application
+## Run application
 
 **npm start**
 
