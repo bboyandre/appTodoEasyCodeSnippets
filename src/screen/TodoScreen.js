@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList } from "react-native";
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList, ScrollView } from "react-native";
 import React, { useState } from "react";
 import { IconButton } from "react-native-paper";
 import { Fallback } from "../components/Fallback";
@@ -129,7 +129,12 @@ export const TodoScreen = () => {
                 )
             }
 
-            <FlatList data={todoList} renderItem={renderTodo} />
+                <FlatList 
+                    // scrollEnabled={false} 
+                    data={todoList} 
+                    renderItem={renderTodo} 
+                    style={{ height: "73%" }}
+                />
 
             {todoList.length <= 0 && <Fallback />}
         </View>
